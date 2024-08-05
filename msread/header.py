@@ -162,7 +162,7 @@ class ScanHeader(object):
             label += " (-)"
             
         if self.retention_time is not None:
-            label += " RT:%.3f min" % (self.retention_time / 60)
+            label += " RT:%.3f min" % (self.retention_time)
             
         if self.dissociation_method is not None:
             label += " %s" % self.dissociation_method
