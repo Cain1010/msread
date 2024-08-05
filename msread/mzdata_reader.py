@@ -412,7 +412,7 @@ class MZDataReader(MSReader):
             
             # retention time in minutes
             if accession == 'PSI:1000038' and value:
-                return 'retention_time', float(value) * 60
+                return 'retention_time', value 
         
         # precursor data
         if not context or context == 'precursor':
